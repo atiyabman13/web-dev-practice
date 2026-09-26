@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fb;
+        }
+
+        h1 {
+            text-align: center;
+            color: #304f9f;
+        }
+
+        .container {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #dfe9ff;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .box:hover {
+            transform: scale(1.03);
+        }
+
+
+        /* Responsive design */
+
+        @media (max-width: 700px) {
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Skills</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>HTML</h2>
+            <p>Web Page Structure</p>
+        </div>
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>Web Page Styling</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>Web Page Interaction</p>
+        </div>
+
+        <div class="box">
+            <h2>Python</h2>
+            <p>Programming</p>
+        </div>
+
+        <div class="box">
+            <h2>SQL</h2>
+            <p>Database</p>
+        </div>
+
+        <div class="box">
+            <h2>Power BI</h2>
+            <p>Data Visualization</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
