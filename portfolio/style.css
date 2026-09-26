@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    background-color: #dfe9ff;
+    padding: 35px;
+    border-bottom: 3px solid #6c8cd5;
+}
+
+header img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    color: #243b6b;
+}
+
+header p {
+    color: #4f5f7a;
+    font-size: 17px;
+}
+
+
+/* Navigation */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #243b6b;
+    margin: 6px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d35400;
+    text-decoration: underline;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #8aa9e6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #304f9f;
+    border-bottom: 2px solid #dfe9ff;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #526da8;
+}
+
+
+/* Lists */
+
+li {
+    margin: 10px;
+    line-height: 1.5;
+}
+
+
+/* Links */
+
+a {
+    color: #3366cc;
+}
+
+a:hover {
+    color: #d35400;
+}
+
+
+/* Experience */
+
+#experience h3 {
+    color: #405f9d;
+    margin-top: 25px;
+}
+
+#experience ul {
+    padding-left: 25px;
+}
+
+
+/* Projects */
+
+#projects h3 {
+    color: #405f9d;
+}
+
+
+/* Profiles */
+
+#profiles p {
+    padding: 8px;
+}
+
+#profiles a {
+    font-weight: bold;
+}
+
+
+/* Form */
+
+input,
+textarea {
+    width: 90%;
+    padding: 9px;
+    border: 1px solid #b8c4d9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #6c8cd5;
+}
+
+
+/* Button */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #526da8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #304f9f;
+}
+
+
+/* Success Message */
+
+#message {
+    color: #238636;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #dfe9ff;
+    color: #243b6b;
+    padding: 20px;
+    margin-top: 25px;
+    border-top: 2px solid #6c8cd5;
+}
