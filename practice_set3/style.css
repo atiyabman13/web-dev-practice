@@ -1,0 +1,1100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f4ff;
+    color: #29243a;
+}
+
+
+/* ========================================
+   NAVIGATION BAR
+======================================== */
+
+nav {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: white;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* Website Name */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #7b2ff7;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #555;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #7b2ff7;
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #ffc4e8,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            #c9b8ff,
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff3fc,
+            #eee8ff,
+            #e9f7ff
+        );
+}
+
+
+.hero-content {
+    max-width: 800px;
+
+    animation: fadeUp 1s ease;
+}
+
+
+/* Small heading */
+
+.small-title {
+
+    color: #7b2ff7;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Main heading */
+
+.hero h1 {
+
+    font-size: 70px;
+
+    line-height: 1.05;
+
+    color: #29243a;
+
+    margin-bottom: 25px;
+}
+
+
+/* Purple part of heading */
+
+.hero h1 span {
+
+    display: block;
+
+    color: #7b2ff7;
+}
+
+
+/* Hero description */
+
+.hero-text {
+
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+
+/* Start button */
+
+.start-btn {
+
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b2ff7,
+            #f107a3
+        );
+
+    box-shadow:
+        0 8px 25px
+        rgba(123, 47, 247, 0.30);
+
+    transition: all 0.3s ease;
+}
+
+
+.start-btn:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px
+        rgba(123, 47, 247, 0.40);
+}
+
+
+/* ========================================
+   QUESTIONS SECTION
+======================================== */
+
+.questions {
+
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background-color: #f7f4ff;
+}
+
+
+.questions h2 {
+
+    font-size: 42px;
+
+    color: #29243a;
+
+    margin-bottom: 12px;
+}
+
+
+.section-text {
+
+    color: #777;
+
+    font-size: 17px;
+
+    margin-bottom: 50px;
+}
+
+
+/* ========================================
+   QUESTION CARDS
+======================================== */
+
+.card-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* Individual card */
+
+.card {
+
+    position: relative;
+
+    min-height: 360px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: left;
+
+    text-decoration: none;
+
+    color: #29243a;
+
+    background-color: white;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* Decorative circle */
+
+.card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    top: -65px;
+
+    right: -65px;
+
+    opacity: 0.25;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Move circle when hovering */
+
+.card:hover::before {
+
+    transform: scale(1.3);
+}
+
+
+/* Card hover */
+
+.card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+/* Different card colors */
+
+.card-one::before {
+    background-color: #7b2ff7;
+}
+
+.card-two::before {
+    background-color: #ff4b91;
+}
+
+.card-three::before {
+    background-color: #ff9f43;
+}
+
+.card-four::before {
+    background-color: #00b894;
+}
+
+
+/* Emoji */
+
+.icon {
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+    transition: transform 0.4s ease;
+}
+
+
+.card:hover .icon {
+
+    transform: scale(1.15) rotate(5deg);
+}
+
+
+/* Question number */
+
+.card span {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #888;
+}
+
+
+/* Card heading */
+
+.card h3 {
+
+    font-size: 26px;
+
+    margin: 12px 0;
+}
+
+
+/* Card paragraph */
+
+.card p {
+
+    color: #777;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Try button */
+
+.card-button {
+
+    display: inline-block;
+
+    color: #7b2ff7;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
+.card:hover .card-button {
+
+    transform: translateX(6px);
+
+    color: #f107a3;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    color: #777;
+
+    background-color: white;
+
+    line-height: 2;
+
+    border-top: 1px solid #eee;
+}
+
+
+/* ========================================
+   QUESTION PAGES
+======================================== */
+
+.practice-page {
+
+    min-height:
+        calc(100vh - 70px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+
+    background:
+
+        radial-gradient(
+            circle at top right,
+            #ffd6f6,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at bottom left,
+            #d9d0ff,
+            transparent 35%
+        ),
+
+        #f7f4ff;
+}
+
+
+/* Main practice card */
+
+.practice-card,
+.calculator-card {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.12);
+
+    animation: fadeUp 0.7s ease;
+}
+
+
+/* Big emoji */
+
+.big-icon {
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Question label */
+
+.question-label {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #7b2ff7;
+}
+
+
+/* Question heading */
+
+.practice-card h1,
+.calculator-card h1 {
+
+    font-size: 38px;
+
+    margin: 15px 0;
+}
+
+
+/* Description */
+
+.practice-card > p,
+.calculator-card > p {
+
+    color: #777;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+input {
+
+    padding: 14px 16px;
+
+    border: 2px solid #eeeeee;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+}
+
+
+input:focus {
+
+    border-color: #7b2ff7;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(123, 47, 247, 0.10);
+}
+
+
+/* Q1 input area */
+
+.input-area {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+button {
+
+    border: none;
+
+    padding: 14px 22px;
+
+    border-radius: 12px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b2ff7,
+            #f107a3
+        );
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(123, 47, 247, 0.30);
+}
+
+
+button:active {
+
+    transform: scale(0.96);
+}
+
+
+/* ========================================
+   RESULT BOX
+======================================== */
+
+.result-box {
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background-color: #f5efff;
+
+    color: #7b2ff7;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   COLOR CHANGER
+======================================== */
+
+.color-preview {
+
+    width: 160px;
+
+    height: 160px;
+
+    margin: 20px auto;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #7b2ff7;
+
+    box-shadow:
+        0 15px 35px
+        rgba(123, 47, 247, 0.30);
+
+    transition:
+        background-color 0.5s ease,
+        transform 0.5s ease;
+}
+
+
+.color-preview:hover {
+
+    transform: scale(1.05);
+}
+
+
+.color-preview span {
+
+    font-size: 50px;
+}
+
+
+/* Color button */
+
+.color-button {
+
+    margin-top: 15px;
+}
+
+
+/* Color name */
+
+.color-name {
+
+    margin: 20px 0;
+
+    font-weight: bold;
+
+    color: #666;
+}
+
+
+/* ========================================
+   CALCULATOR
+======================================== */
+
+.calc-input {
+
+    width: 100%;
+
+    margin-bottom: 15px;
+}
+
+
+/* Calculator operation buttons */
+
+.calculator-buttons {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+
+    margin:
+        10px 0 20px;
+}
+
+
+.calculator-buttons button {
+
+    height: 55px;
+
+    font-size: 22px;
+
+    padding: 0;
+}
+
+
+/* Calculator result */
+
+.calculator-result {
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background-color: #f5efff;
+
+    color: #7b2ff7;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   DATE DISPLAY
+======================================== */
+
+.date-display {
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b2ff7,
+            #f107a3
+        );
+
+    color: white;
+
+    margin: 25px 0;
+
+    box-shadow:
+        0 15px 30px
+        rgba(123, 47, 247, 0.30);
+}
+
+
+/* Day */
+
+#dayName {
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Date number */
+
+#dateNumber {
+
+    font-size: 65px;
+
+    font-weight: bold;
+
+    margin: 10px;
+}
+
+
+/* Month and year */
+
+#monthYear {
+
+    font-size: 20px;
+}
+
+
+/* Date message */
+
+.date-message {
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* ========================================
+   BACK BUTTON
+======================================== */
+
+.back-button {
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    color: #7b2ff7;
+
+    background-color: #f1eaff;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
+.back-button:hover {
+
+    background-color: #7b2ff7;
+
+    color: white;
+
+    transform: translateX(-5px);
+}
+
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .card-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .card {
+
+        min-height: 330px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    /* Navigation */
+
+    nav {
+
+        height: auto;
+
+        padding: 18px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .nav-links a {
+
+        font-size: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        min-height: 500px;
+
+        padding: 50px 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 48px;
+    }
+
+
+    .hero-text {
+
+        font-size: 16px;
+    }
+
+
+    /* Questions */
+
+    .questions {
+
+        padding:
+            60px 20px;
+    }
+
+
+    .questions h2 {
+
+        font-size: 32px;
+    }
+
+
+    /* Cards */
+
+    .card-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* Practice pages */
+
+    .practice-card,
+    .calculator-card {
+
+        padding: 35px 20px;
+
+        border-radius: 22px;
+    }
+
+
+    .practice-card h1,
+    .calculator-card h1 {
+
+        font-size: 30px;
+    }
+
+
+    /* Q1 */
+
+    .input-area {
+
+        flex-direction: column;
+    }
+
+
+    .input-area input {
+
+        width: 100%;
+    }
+
+
+    .input-area button {
+
+        width: 100%;
+    }
+
+
+    /* Calculator */
+
+    .calculator-buttons {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* Date */
+
+    #dateNumber {
+
+        font-size: 55px;
+    }
+
+}

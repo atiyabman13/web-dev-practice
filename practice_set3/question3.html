@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav>
+
+        <div class="logo">Practice Set 3</div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="question1.html">Q1</a>
+            <a href="question2.html">Q2</a>
+            <a href="question3.html">Q3</a>
+            <a href="question4.html">Q4</a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="practice-page">
+
+        <div class="calculator-card">
+
+            <div class="big-icon">🧮</div>
+
+            <span class="question-label">
+                QUESTION 03
+            </span>
+
+            <h1>Simple Calculator</h1>
+
+            <p>
+                Enter two numbers and choose an operation.
+            </p>
+
+
+            <input
+                type="number"
+                id="num1"
+                class="calc-input"
+                placeholder="First number"
+            >
+
+
+            <input
+                type="number"
+                id="num2"
+                class="calc-input"
+                placeholder="Second number"
+            >
+
+
+            <div class="calculator-buttons">
+
+                <button onclick="calculate('+')">
+                    +
+                </button>
+
+                <button onclick="calculate('-')">
+                    −
+                </button>
+
+                <button onclick="calculate('*')">
+                    ×
+                </button>
+
+                <button onclick="calculate('/')">
+                    ÷
+                </button>
+
+            </div>
+
+
+            <div id="calcResult" class="calculator-result">
+
+                Result
+
+            </div>
+
+
+            <a href="index.html" class="back-button">
+                ← Back to Questions
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
