@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Students</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">&lt;/&gt;</span>
+
+            <span>
+                <strong>StudentHub</strong>
+                <small>by Atiyab </small>
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="students.html" class="active">
+                Students
+            </a>
+
+            <a href="analytics.html">
+                Analytics
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+
+        <span class="nav-status">
+            ● Live Dashboard
+        </span>
+
+    </nav>
+
+
+    <main class="page-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    ✦ STUDENT DIRECTORY
+                </span>
+
+                <h1>
+                    Manage your
+                    <span>students.</span>
+                </h1>
+
+                <p>
+                    Add new students, update their information,
+                    search records and manage your directory.
+                </p>
+
+            </div>
+
+
+            <div class="header-illustration">
+                🎓
+            </div>
+
+        </section>
+
+
+
+        <!-- STAT CARDS -->
+
+        <section class="dashboard-stats">
+
+            <div class="dashboard-stat red-theme">
+
+                <div class="stat-symbol">
+                    👥
+                </div>
+
+                <div>
+
+                    <span>Total Students</span>
+
+                    <strong id="totalStudents">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat green-theme">
+
+                <div class="stat-symbol">
+                    📚
+                </div>
+
+                <div>
+
+                    <span>Departments</span>
+
+                    <strong id="totalDepartments">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat purple-theme">
+
+                <div class="stat-symbol">
+                    ⭐
+                </div>
+
+                <div>
+
+                    <span>Average CGPA</span>
+
+                    <strong id="averageCgpa">
+                        0.00
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ADD STUDENT -->
+
+        <section class="glass-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        STUDENT DETAILS
+                    </span>
+
+                    <h2 id="formTitle">
+                        Add New Student
+                    </h2>
+
+                </div>
+
+                <span class="crud-badge">
+                    CRUD
+                </span>
+
+            </div>
+
+
+            <form id="studentForm">
+
+
+                <div class="form-grid">
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Enter student name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Roll Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="rollNumber"
+                            placeholder="Example: ISE101"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Department
+                        </label>
+
+                        <select id="department" required>
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option value="ISE">
+                                Information Science
+                            </option>
+
+                            <option value="CSE">
+                                Computer Science
+                            </option>
+
+                            <option value="ECE">
+                                Electronics
+                            </option>
+
+                            <option value="ME">
+                                Mechanical
+                            </option>
+
+                            <option value="AIML">
+                                AI & ML
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Semester
+                        </label>
+
+                        <select id="semester" required>
+
+                            <option value="">
+                                Select Semester
+                            </option>
+
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                            <option value="7">Semester 7</option>
+                            <option value="8">Semester 8</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            CGPA
+                        </label>
+
+                        <input
+                            type="number"
+                            id="cgpa"
+                            min="0"
+                            max="10"
+                            step="0.01"
+                            placeholder="Example: 9.21"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="student@email.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-buttons">
+
+                    <button
+                        type="submit"
+                        class="btn btn-red"
+                        id="submitButton"
+                    >
+                        + Add Student
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-light"
+                        id="cancelButton"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- STUDENT TABLE -->
+
+        <section class="glass-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        STUDENT DIRECTORY
+                    </span>
+
+                    <h2>
+                        All Students
+                    </h2>
+
+                </div>
+
+                <span
+                    class="student-count"
+                    id="studentCount"
+                >
+                    0 Students
+                </span>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-area">
+
+
+                <div class="search-box">
+
+                    <span>⌕</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search name or roll number..."
+                    >
+
+                </div>
+
+
+                <select id="departmentFilter">
+
+                    <option value="all">
+                        All Departments
+                    </option>
+
+                    <option value="ISE">ISE</option>
+
+                    <option value="CSE">CSE</option>
+
+                    <option value="ECE">ECE</option>
+
+                    <option value="ME">ME</option>
+
+                    <option value="AIML">AIML</option>
+
+                </select>
+
+
+                <select id="semesterFilter">
+
+                    <option value="all">
+                        All Semesters
+                    </option>
+
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- TABLE -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Student</th>
+
+                            <th>Roll No.</th>
+
+                            <th>Department</th>
+
+                            <th>Semester</th>
+
+                            <th>CGPA</th>
+
+                            <th>Email</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="studentTableBody">
+                    </tbody>
+
+                </table>
+
+
+                <div
+                    id="emptyState"
+                    class="empty-state"
+                >
+
+                    <div>
+                        🎓
+                    </div>
+
+                    <h3>
+                        No students found
+                    </h3>
+
+                    <p>
+                        Add your first student to get started.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <strong>STUDENTHUB</strong>
+
+        <span>
+            Week 04 • CRUD + localStorage
+        </span>
+
+        <span>
+            Made with curiosity & code ♥
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Analytics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">&lt;/&gt;</span>
+
+            <span>
+                <strong>StudentHub</strong>
+                <small>by Atiyab </small>
+            </span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="students.html">Students</a>
+
+            <a href="analytics.html" class="active">
+                Analytics
+            </a>
+
+            <a href="about.html">About</a>
+
+        </div>
+
+        <a href="students.html" class="nav-button">
+            Manage Students
+        </a>
+
+    </nav>
+
+
+
+    <main class="page-container">
+
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    ✦ ACADEMIC INSIGHTS
+                </span>
+
+                <h1>
+                    Your data,
+                    <span>visualized.</span>
+                </h1>
+
+                <p>
+                    Get a quick overview of your student
+                    records and academic performance.
+                </p>
+
+            </div>
+
+
+            <div class="header-illustration">
+                📈
+            </div>
+
+        </section>
+
+
+
+        <!-- BIG NUMBERS -->
+
+        <section class="analytics-grid">
+
+
+            <div class="analytics-card red-theme tilt-card">
+
+                <span class="analytics-icon">
+                    👥
+                </span>
+
+                <p>Total Students</p>
+
+                <h2 id="analyticsStudents">
+                    0
+                </h2>
+
+                <span class="analytics-note">
+                    Active records
+                </span>
+
+            </div>
+
+
+            <div class="analytics-card green-theme tilt-card">
+
+                <span class="analytics-icon">
+                    🏫
+                </span>
+
+                <p>Departments</p>
+
+                <h2 id="analyticsDepartments">
+                    0
+                </h2>
+
+                <span class="analytics-note">
+                    Across programs
+                </span>
+
+            </div>
+
+
+            <div class="analytics-card purple-theme tilt-card">
+
+                <span class="analytics-icon">
+                    ⭐
+                </span>
+
+                <p>Average CGPA</p>
+
+                <h2 id="analyticsCgpa">
+                    0.00
+                </h2>
+
+                <span class="analytics-note">
+                    Overall performance
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- DEPARTMENT ANALYTICS -->
+
+        <section class="glass-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        DEPARTMENT OVERVIEW
+                    </span>
+
+                    <h2>
+                        Student distribution
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div id="departmentAnalytics"
+                 class="department-list">
+            </div>
+
+        </section>
+
+
+
+        <!-- PERFORMANCE -->
+
+        <section class="glass-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        ACADEMIC PERFORMANCE
+                    </span>
+
+                    <h2>
+                        CGPA overview
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="performance-box">
+
+                <div class="performance-circle">
+
+                    <span id="performanceCgpa">
+                        0.00
+                    </span>
+
+                    <small>
+                        / 10
+                    </small>
+
+                </div>
+
+
+                <div class="performance-content">
+
+                    <h3>
+                        Overall academic score
+                    </h3>
+
+                    <p>
+                        This value is calculated automatically
+                        from the CGPA values stored in StudentHub.
+                    </p>
+
+                    <div class="large-progress">
+
+                        <div id="cgpaProgress"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CTA -->
+
+        <section class="analytics-cta">
+
+            <div>
+
+                <span class="eyebrow">
+                    READY TO UPDATE?
+                </span>
+
+                <h2>
+                    Add more student records.
+                </h2>
+
+            </div>
+
+            <a
+                href="students.html"
+                class="btn btn-red"
+            >
+                Go to Students →
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <strong>STUDENTHUB</strong>
+
+        <span>
+            Week 04 • Analytics
+        </span>
+
+        <span>
+            Made with curiosity & code ♥
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

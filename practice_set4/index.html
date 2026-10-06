@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JS Page by Atiyab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                &lt;/&gt;
+            </div>
+
+            <div>
+                <h2>JS Page by Atiyab</h2>
+                <p>JavaScript Practice • Week 4</p>
+            </div>
+
+        </div>
+
+        <div class="week-badge">
+            ● WEEK 04
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    ✦ Atiyab'S JAVASCRIPT SPACE
+                </span>
+
+                <h1>
+                    Learn JavaScript.
+                    <span>Build Something.</span>
+                </h1>
+
+                <p>
+                    A small interactive playground where I practise
+                    JavaScript concepts through simple and creative
+                    mini challenges.
+                </p>
+
+                <a href="#practice" class="hero-button">
+                    Explore Challenges ↓
+                </a>
+
+            </div>
+
+
+            <div class="hero-code">
+
+                <div class="code-box">
+
+                    <div class="code-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <p>
+                        <b>const</b> skills = [
+                    </p>
+
+                    <p class="indent">
+                        "JavaScript",
+                    </p>
+
+                    <p class="indent">
+                        "Practice",
+                    </p>
+
+                    <p class="indent">
+                        "Progress"
+                    </p>
+
+                    <p>
+                        ];
+                    </p>
+
+                    <p class="comment">
+                        // keep learning ✦
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INFO STRIP ================= -->
+
+        <section class="info-strip">
+
+            <div class="info-card">
+
+                <div class="info-icon red-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <strong>4 Challenges</strong>
+                    <small>Practice based</small>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon green-icon">
+                    &lt;/&gt;
+                </div>
+
+                <div>
+                    <strong>Real JavaScript</strong>
+                    <small>Interactive examples</small>
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon cream-icon">
+                    ♡
+                </div>
+
+                <div>
+                    <strong>Keep Learning</strong>
+                    <small>One step at a time</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SECTION TITLE ================= -->
+
+        <section class="section-title" id="practice">
+
+            <div>
+
+                <span>
+                    THE PRACTICE LAB
+                </span>
+
+                <h2>
+                    Four little challenges<span>.</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Try each activity and see JavaScript
+                working directly on the page.
+            </p>
+
+        </section>
+
+
+        <!-- ================= CARDS ================= -->
+
+        <section class="cards">
+
+
+            <!-- ================= CARD 1 ================= -->
+
+            <article class="card red-card">
+
+                <div class="card-header">
+
+                    <div class="card-icon red-bg">
+                        ◉
+                    </div>
+
+                    <span class="tag red-tag">
+                        01 / LOCAL STORAGE
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Remember Me
+                </h3>
+
+                <p class="description">
+                    Enter your name and save it inside
+                    your browser using localStorage.
+                    Refresh the page to see it again.
+                </p>
+
+
+                <form id="nameForm">
+
+                    <label for="nameInput">
+                        What should I call you?
+                    </label>
+
+                    <div class="input-row">
+
+                        <input
+                            type="text"
+                            id="nameInput"
+                            placeholder="Enter your name..."
+                            maxlength="40"
+                        >
+
+                        <button
+                            type="submit"
+                            class="button red-button"
+                        >
+                            Save Name →
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <div
+                    id="nameResult"
+                    class="result-box red-result"
+                >
+
+                    <div class="result-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Hello, future developer!
+                        </strong>
+
+                        <p>
+                            Your saved name will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card-actions">
+
+                    <button
+                        id="clearName"
+                        class="small-button"
+                    >
+                        Clear
+                    </button>
+
+                    <button
+                        id="checkStorage"
+                        class="text-button"
+                    >
+                        Check localStorage →
+                    </button>
+
+                </div>
+
+
+                <p
+                    id="storageMessage"
+                    class="message"
+                ></p>
+
+            </article>
+
+
+
+            <!-- ================= CARD 2 ================= -->
+
+            <article class="card green-card">
+
+                <div class="card-header">
+
+                    <div class="card-icon green-bg">
+                        ❝
+                    </div>
+
+                    <span class="tag green-tag">
+                        02 / JSON + API
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    A Little Inspiration
+                </h3>
+
+                <p class="description">
+                    Fetch a random quote from a free API
+                    and display the returned JSON data.
+                </p>
+
+
+                <div
+                    id="quoteBox"
+                    class="quote-box"
+                >
+
+                    <span class="quote-symbol">
+                        “
+                    </span>
+
+                    <p id="quoteText">
+                        The secret of getting ahead
+                        is getting started.
+                    </p>
+
+                    <small id="quoteAuthor">
+                        — Mark Twain
+                    </small>
+
+                </div>
+
+
+                <button
+                    id="quoteButton"
+                    class="button green-button full-button"
+                >
+
+                    ↻ &nbsp; Get Fresh Quote
+
+                </button>
+
+
+                <p
+                    id="quoteStatus"
+                    class="message"
+                >
+                    Ready when you are.
+                </p>
+
+            </article>
+
+
+
+            <!-- ================= CARD 3 ================= -->
+
+            <article class="card green-card">
+
+                <div class="card-header">
+
+                    <div class="card-icon green-bg">
+                        ✓
+                    </div>
+
+                    <span class="tag green-tag">
+                        03 / FORM VALIDATION
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Is That Email Ready?
+                </h3>
+
+                <p class="description">
+                    Enter an email address and let
+                    JavaScript check its format.
+                </p>
+
+
+                <form
+                    id="emailForm"
+                    novalidate
+                >
+
+                    <label for="emailInput">
+                        Email address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="emailInput"
+                        placeholder="you@example.com"
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="button green-button full-button"
+                    >
+                        Validate Email →
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="emailResult"
+                    class="result-box neutral-result"
+                >
+
+                    <div class="result-icon">
+                        ◎
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Waiting for your input
+                        </strong>
+
+                        <p>
+                            We'll check the email format.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================= CARD 4 ================= -->
+
+            <article class="card red-card">
+
+                <div class="card-header">
+
+                    <div class="card-icon red-bg">
+                        { }
+                    </div>
+
+                    <span class="tag red-tag">
+                        04 / ES6 + ARROW
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Number Filter
+                </h3>
+
+                <p class="description">
+                    Enter numbers separated by commas.
+                    We'll keep only numbers greater than 50.
+                </p>
+
+
+                <form id="numberForm">
+
+                    <label for="numberInput">
+                        Your number list
+                    </label>
+
+                    <input
+                        type="text"
+                        id="numberInput"
+                        value="12, 56, 78, 34, 99"
+                        placeholder="12, 56, 78, 34, 99"
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="button red-button full-button"
+                    >
+                        Filter Numbers →
+                    </button>
+
+                </form>
+
+
+                <div class="number-result">
+
+                    <div class="number-title">
+                        ↳ NUMBERS GREATER THAN 50
+                    </div>
+
+                    <div
+                        id="numberOutput"
+                        class="number-chips"
+                    >
+
+                        <span class="number-chip">
+                            56
+                        </span>
+
+                        <span class="number-chip">
+                            78
+                        </span>
+
+                        <span class="number-chip">
+                            99
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p
+                    id="numberMessage"
+                    class="message"
+                >
+                    Using an ES6 arrow function with
+                    filter().
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================= BOTTOM ================= -->
+
+        <section class="bottom-banner">
+
+            <div class="bottom-icon">
+                ✦
+            </div>
+
+            <div>
+
+                <strong>
+                    Small practice. Real progress.
+                </strong>
+
+                <p>
+                    Keep experimenting and keep building.
+                    Every line of code teaches something new.
+                </p>
+
+            </div>
+
+            <a href="#practice">
+                Practice Again ↑
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <span>
+            JS PAGE BY Atiyab
+            <b>•</b>
+            WEEK 04
+        </span>
+
+        <span>
+            Made with curiosity & code
+            <b>♥</b>
+        </span>
+
+    </footer>
+
+</body>
+
+</html>
