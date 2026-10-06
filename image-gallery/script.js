@@ -1,3 +1,4 @@
+
 function openImage(image) {
 
     let lightbox = document.getElementById("lightbox");

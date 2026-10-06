@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Practice Set 1 | Question 4</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            font-family:
+                Arial,
+                sans-serif;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff0f3,
+                    #e1f1ed,
+                    #e1edf7
+                );
+
+            color: #20322f;
+
+        }
+
+
+        .container {
+
+            width: 100%;
+
+            max-width: 900px;
+
+            text-align: center;
+
+            background: white;
+
+            padding: 50px;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 25px 70px
+                rgba(20,60,60,.15);
+
+        }
+
+
+        .emoji {
+
+            font-size: 4rem;
+
+            margin-bottom: 15px;
+
+            animation:
+                float 2.5s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(-10px);
+            }
+
+        }
+
+
+        h1 {
+
+            font-size: 2.5rem;
+
+            margin-bottom: 12px;
+
+            color: #075e54;
+
+        }
+
+
+        p {
+
+            color: #66736f;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .links {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 15px;
+
+        }
+
+
+        .links a {
+
+            padding: 20px;
+
+            border-radius: 18px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            color: #075e54;
+
+            background: #e0f0ec;
+
+            transition: .3s;
+
+        }
+
+
+        .links a:nth-child(2) {
+
+            background: #e3edf6;
+
+            color: #24547a;
+
+        }
+
+
+        .links a:nth-child(3) {
+
+            background: #f8dce2;
+
+            color: #9a5262;
+
+        }
+
+
+        .links a:hover {
+
+            transform:
+                translateY(-6px);
+
+            box-shadow:
+                0 12px 25px
+                rgba(0,0,0,.1);
+
+        }
+
+
+        .back {
+
+            display: inline-block;
+
+            margin-top: 30px;
+
+            color: #075e54;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+        }
+
+
+        @media(max-width:650px) {
+
+            .container {
+                padding: 30px 20px;
+            }
+
+            .links {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <div class="emoji">
+        🌷
+    </div>
+
+
+    <h1>
+        Question 4
+    </h1>
+
+
+    <p>
+        Welcome to the Question 4 mini website.
+        Choose a page below to explore it.
+    </p>
+
+
+    <div class="links">
+
+        <a href="home.html">
+            🏠 Home
+        </a>
+
+
+        <a href="about.html">
+            💚 About
+        </a>
+
+
+        <a href="contact.html">
+            💌 Contact
+        </a>
+
+    </div>
+
+
+    <a href="../index.html"
+       class="back">
+
+        ← Back to Practice Set 1
+
+    </a>
+
+
+</div>
+
+
+</body>
+
+</html>

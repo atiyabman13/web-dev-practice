@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practice Set 1 | Atiyab's Web Lab</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: #fffaf4;
+            color: #343936;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #a95d5d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f9e5e3, #e4f2e9);
+            padding: 50px 35px;
+            border-radius: 28px;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #68716c;
+            line-height: 1.7;
+        }
+
+        .questions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 20px;
+            border: 1px solid #ebe5df;
+            box-shadow: 0 10px 30px rgba(82, 72, 66, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .number {
+            font-size: 13px;
+            font-weight: bold;
+            color: #4e8067;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #747c77;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            background: #d98282;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #a95d5d;
+        }
+
+        @media (max-width: 650px) {
+            .questions {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="../index.html" class="back">
+            ← Back to Atiyab's Web Lab
+        </a>
+
+        <section class="hero">
+
+            <h1>Practice Set 1</h1>
+
+            <p>
+                My Week 1 web development practice and
+                HTML/CSS exercises.
+            </p>
+
+        </section>
+
+
+        <div class="questions">
+
+            <div class="card">
+                <span class="number">QUESTION 01</span>
+
+                <h2>Question 1</h2>
+
+                <p>
+                    Explore my first Practice Set 1 exercise.
+                </p>
+
+                <a href="question1.html" class="button">
+                    Open Question →
+                </a>
+            </div>
+
+
+            <div class="card">
+                <span class="number">QUESTION 02</span>
+
+                <h2>Question 2</h2>
+
+                <p>
+                    Explore my second Practice Set 1 exercise.
+                </p>
+
+                <a href="question2.html" class="button">
+                    Open Question →
+                </a>
+            </div>
+
+
+            <div class="card">
+                <span class="number">QUESTION 03</span>
+
+                <h2>Question 3</h2>
+
+                <p>
+                    Explore my third Practice Set 1 exercise.
+                </p>
+
+                <a href="question3.html" class="button">
+                    Open Question →
+                </a>
+            </div>
+
+
+            <div class="card">
+                <span class="number">QUESTION 04</span>
+
+                <h2>Question 4</h2>
+
+                <p>
+                    Explore the Question 4 project.
+                </p>
+
+                <a href="question4/index.html" class="button">
+    Open Question →
+</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
